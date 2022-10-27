@@ -1,0 +1,279 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Globales */
+
+body {
+  background-image: url(../img/Background.png);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 4rem;
+  font-family: "Roboto";
+  font-weight: bold;
+  line-height: 21.09px;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin: 35px 0;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.boton {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+
+.boton:hover {
+  color: black;
+  background-color: #e69c00;
+}
+
+.boton:active {
+  position: relative;
+  top: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+  height: 30rem;
+  background-image: url(../img/Portada.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.contenedor-hero {
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.contenedor-hero h1 {
+  margin: 0;
+}
+
+/* header */
+
+.contenido-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.contenido-header .navegacion {
+  align-self: center;
+}
+
+.hero .registro:hover {
+  color: black;
+}
+
+.navegacion a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+  text-decoration: none;
+  margin: 2rem 1.5rem;
+}
+
+.navegacion a:hover {
+  color: #e69c00;
+}
+
+/* Productos */
+
+.contenedor-principal img {
+  width: 330px;
+  height: 215px;
+}
+
+.tacos-clasicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  position: relative;
+  margin: 10px 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #464646 25px, #222831 25px);
+}
+
+.producto .detalles-producto {
+  text-align: center;
+}
+
+.producto h5 {
+  font-weight: 600;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.producto p {
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 23px;
+  padding: 0 25px;
+}
+
+.producto .precio-compra {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px;
+  margin: 15px 0;
+}
+
+.producto .precio-compra p {
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 19px;
+}
+
+.producto .imagen-producto {
+  background: #f1f2f3b9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  border-radius: 0 0 0 45px;
+  margin: -1px;
+  padding: 25px;
+}
+
+/** Contactanos **/
+
+.contacto {
+  position: relative;
+}
+
+.seccion-contacto {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 2rem;
+  background-color: #222831;
+  opacity: 4;
+  display: flex;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.seccion-contacto h1 {
+  margin: 2rem;
+}
+
+.seccion-contacto p {
+  text-align: justify;
+}
+
+.seccion-contacto .boton-contacto {
+  text-align: center;
+  margin: 1rem 1rem;
+}
+
+/** Footer **/
+
+.site-footer {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: #222831;
+  padding: 25px;
+}
+
+.site-footer h3 {
+  color: #e69c00;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.menu a {
+  margin: 0 10px;
+}
